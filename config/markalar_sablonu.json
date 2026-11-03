@@ -1,0 +1,98 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "version": "1.0.0",
+  "brands": [
+    {
+      "id": "lappsoft-hq",
+      "slug": "lappsoft-hq",
+      "name": "Lappsoft HQ",
+      "sector": "Yapay Zeka Laboratuvarı & SaaS Yazılım Evi",
+      "toneOfVoice": "Vizyoner teknoloji laboratuvarı; mühendislik kalitesine vurgu yapan, güven veren, net, samimi ve insana yakın yapay zeka liderliği.",
+      "targetAudience": "Girişimciler, yazılımcılar, kurumsal karar vericiler ve yeni nesil teknoloji meraklıları.",
+      "primaryColor": "#6DE675",
+      "accentColor": "#8F23CE",
+      "defaultLanguage": "tr",
+      "hashtags": ["#Lappsoft", "#YapayZeka", "#Girişimcilik", "#TechLab", "#Yazılım"],
+      "bannedWords": ["kolay para", "kesin zenginlik", "devrim niteliğinde devrim", "günümüzün dijital dünyasında"],
+      "contentAngles": [
+        "Bir özelliği veya yapay zeka modelini arka planda nasıl mimariledik?",
+        "Girişimcilerin zamanını kurtaran pratik otomasyon çözümleri.",
+        "Geleceğin yazılım dünyasına dair vizyoner tespitler ve ipuçları."
+      ]
+    },
+    {
+      "id": "modena",
+      "slug": "modena",
+      "name": "Modena",
+      "sector": "Yapay Zeka Destekli Etkinlik, Yaşam Anı & Kişisel Stil Asistanı",
+      "toneOfVoice": "Şık, ilham verici, dinamik, samimi ve modern bir kişisel stil danışmanı dili. Asla sıkıcı veya mesafeli değil.",
+      "targetAudience": "Düğün, doğum günü, iş/plaza toplantısı, spor/yürüyüş ve günlük buluşmalar için hızlı ve şık kombin arayan şehirli kadın ve erkekler.",
+      "primaryColor": "#7C4DFF",
+      "accentColor": "#E040FB",
+      "defaultLanguage": "tr",
+      "hashtags": ["#ModenaApp", "#KombinÖnerisi", "#AIStylist", "#GününKombini", "#StilTakvimi"],
+      "bannedWords": ["ucuz kıyafet", "çirkin görünüm", "mecbursunuz"],
+      "contentAngles": [
+        "Düğün, doğum günü, akşam yemeği ve özel davetler için Stil Takvimiyle önceden kusursuz kombin planlama.",
+        "Sabah koşusu, yürüyüş ve spor sonrası kahve buluşmalarına uyumlu dinamik athleisure kombinler.",
+        "Plaza hayatı, önemli iş toplantıları ve mülakatlar için modern profesyonel görünüm.",
+        "Hava durumu, konum ve mevsim geçişlerine göre dış mekan ve seyahat stili.",
+        "Görsel prova ile kombini kendi üzerinde görme ve dijital gardıroptaki parçaları değerlendirme."
+      ]
+    },
+    {
+      "id": "career-ai",
+      "slug": "career-ai",
+      "name": "CareerAI",
+      "sector": "Yapay Zeka Kariyer Koçu & ATS Optimizasyonu",
+      "toneOfVoice": "Motive edici, sonuç odaklı, profesyonel, somut kariyer adımları sunan ve ATS filtrelerini aşma konusunda rehberlik eden koçluk dili.",
+      "targetAudience": "İş arayan profesyoneller, yeni mezunlar, kariyerini yukarı taşımak isteyenler ve mülakata hazırlananlar.",
+      "primaryColor": "#2563EB",
+      "accentColor": "#2DD4A7",
+      "defaultLanguage": "tr",
+      "hashtags": ["#CareerAI", "#KariyerTavsiyeleri", "#MülakatTeknikleri", "#CVHazırlama", "#İşArama"],
+      "bannedWords": ["torpil", "imkansız", "boşuna okudunuz"],
+      "contentAngles": [
+        "İK mülakatlarında sorulan zor sorulara profesyonel yanıt formülü.",
+        "ATS tarayıcılarıyla tam uyumlu, güçlü ve modern CV yapısı.",
+        "LinkedIn profilinizi iş teklifi çeken bir mıknatısa dönüştürme yolları."
+      ]
+    },
+    {
+      "id": "tabirai",
+      "slug": "tabirai",
+      "name": "TabirAI",
+      "sector": "Rüya Tabiri, Sembolizm & Zihinsel Farkındalık",
+      "toneOfVoice": "Empatik, derinlikli, dinlendirici, merak uyandıran ve kişisel içgörü kazandıran bilge bir rehber dili.",
+      "targetAudience": "Gördüğü rüyaların anlamını merak edenler, bilinçaltı sembollerini araştıranlar ve kişisel farkındalık arayanlar.",
+      "primaryColor": "#14B8A6",
+      "accentColor": "#F59E0B",
+      "defaultLanguage": "tr",
+      "hashtags": ["#TabirAI", "#RüyaTabiri", "#Bilinçaltı", "#Sembolizm", "#Farkındalık"],
+      "bannedWords": ["korkunç felaket", "kesin öleceksin", "büyü", "fal"],
+      "contentAngles": [
+        "Rüyanda gördüğün sık sembollerin (su, uçmak, düşmek) psikolojik anlamı.",
+        "Bilinçaltınızın size gece boyunca gönderdiği gizli mesajlar.",
+        "Zihinsel berraklık ve kaliteli uyku için zihin boşaltma tüyoları."
+      ]
+    },
+    {
+      "id": "solatb",
+      "slug": "solatb",
+      "name": "SolAtb / TradeBot",
+      "sector": "Web3 & Algoritmik Veri Analitiği",
+      "toneOfVoice": "Veriye dayalı, analitik, hızlı, matematiksel ve gerçekçi teknoloji dili. Asla spekülasyon veya yatırım tavsiyesi pompalamaz.",
+      "targetAudience": "Kripto piyasalarında veri takibi yapanlar, algoritmik bot meraklıları ve Web3 ekosistemi kullanıcıları.",
+      "primaryColor": "#14f195",
+      "accentColor": "#10b981",
+      "defaultLanguage": "tr",
+      "hashtags": ["#SolAtb", "#Web3", "#AlgoritmikTicaret", "#KriptoVeri", "#Fintech"],
+      "bannedWords": ["kesin kazanç", "pump", "moon", "yüzde bin kâr", "yatırım tavsiyesidir"],
+      "contentAngles": [
+        "Piyasa volatilitesinde algoritmik botların mantığı ve risk yönetimi.",
+        "Duygusal alım-satım hatalarını önlemenin matematiksel kuralları.",
+        "Blokzincirinde likidite ve veri akışını doğru okuma yöntemleri."
+      ]
+    }
+  ]
+}

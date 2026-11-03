@@ -1,0 +1,22 @@
+{
+  "name": "toprak-agent-core",
+  "version": "1.0.0",
+  "description": "Autonomous Multi-Agent Task Orchestration Engine",
+  "main": "cli.ts",
+  "scripts": {
+    "start": "tsx cli.ts",
+    "server": "tsx server.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@google/genai": "latest",
+    "bullmq": "^5.45.0",
+    "dotenv": "^16.4.7",
+    "ioredis": "^5.6.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
+  }
+}

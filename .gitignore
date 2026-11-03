@@ -1,0 +1,5 @@
+node_modules/
+.env
+storage/baked/
+storage/raw/
+*.log

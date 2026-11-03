@@ -1,0 +1,136 @@
+{
+  "version": "1.0.0",
+  "description": "Toprak Brand Scenario & Physical Action Choreography Pool: Cross-rotated real-life occasions, environments, camera movements, and cast-specific wardrobe directives.",
+  "brandPools": {
+    "modena": [
+      {
+        "id": "modena_sport_walk",
+        "cluster": "ACTIVE_OUTDOOR",
+        "titleTr": "Spor, Sabah Koşusu & Sahil Yürüyüşü 👟",
+        "copyFocusTr": "Sabah koşusu, açık hava yürüyüşü veya spor sonrasında doğrudan arkadaşlarla kahve buluşmasına geçerken hem hareket özgürlüğü sağlayan hem de özenli görünen spor-şık (athleisure) kombin planlama. Dolap veya yatak odasından bahsetme; doğrudan aktif yaşam, yürüyüş ve spor enerjisini işle.",
+        "matchKeywordsTr": ["spor", "koşu", "kosu", "yürüyüş", "yuruyus", "antrenman", "egzersiz", "parkur", "sahil yürüyüşü", "athleisure", "eşofman", "sneaker"],
+        "environmentEn": "Sun-drenched coastal waterfront promenade and lush tree-lined urban park trail during crisp golden morning light, sparkling sea and greenery softly blurred in background",
+        "cameraAndMovementEn": "Dynamic 3-axis gimbal tracking shot gliding smoothly alongside and slightly ahead of the subject at a brisk jogging and energetic walking pace on a 35mm f/2.0 prime lens",
+        "lightingEn": "Crisp golden-hour morning sunlight filtering through trees with natural rim glow and realistic skin sheen",
+        "actionChoreographyEn": "Actively jogging with an athletic, rhythmic stride along the sunlit coastal path, slowing smoothly into an energized confident walk while smiling naturally with realistic fabric motion and breathing physics",
+        "wardrobeBySlotEn": {
+          "FEMALE_STANDARD": "sleek coordinated sage-green and cream performance athleisure set, lightweight breathable zip-up running jacket, sculpted leggings, and cushioned white running sneakers",
+          "FEMALE_TESETTUR": "breathable moisture-wicking modern Turkish modest sports hijab neatly secured with full hair and neck coverage (zero exposed hair), paired with a sleek longline oatmeal-and-sage performance running tunic windbreaker, relaxed athletic track pants, and clean white running trainers",
+          "MALE": "technical slate-blue breathable half-zip running top, tapered athletic performance joggers, lightweight wind-vest, and cushioned neutral running shoes"
+        }
+      },
+      {
+        "id": "modena_wedding_gala",
+        "cluster": "CELEBRATION_NIGHT",
+        "titleTr": "Düğün, Nişan & Özel Davet Şıklığı 💍",
+        "copyFocusTr": "Yaklaşan bir düğün, nişan veya özel davet için Modena Stil Takvimi ile günler öncesinden göz alıcı ve mekanın ruhuna uygun kombin hazırlama, son dakika 'davette ne giyeceğim' telaşını bitirme. Dolap düzenlemekten değil, özel gecede zahmetsizce parlamaktan bahset.",
+        "matchKeywordsTr": ["düğün", "dugun", "nişan", "nisan", "nikah", "davet", "mezuniyet", "kokteyl", "abiye", "smokin", "özel gece"],
+        "environmentEn": "Elegant historic stone terrace and luxury garden wedding venue at twilight, warm string lights, floral archways, and softly glowing architectural columns in shallow depth of field",
+        "cameraAndMovementEn": "Fluid cinematic Steadicam medium-full tracking shot following the subject ascending wide marble terrace steps, smoothly pushing into an expressive medium portrait on 50mm f/1.6 lens",
+        "lightingEn": "Warm tungsten fairy lights blended with deep sapphire dusk sky, soft flattering key light on face and subtle shimmer on fine fabrics",
+        "actionChoreographyEn": "Walking gracefully across the illuminated wedding terrace steps, adjusting cuff or evening clutch subtly with poised posture and turning toward the celebration with a radiant self-assured smile",
+        "wardrobeBySlotEn": {
+          "FEMALE_STANDARD": "flowing emerald-green or champagne silk satin evening gown with architectural draping, minimalist fine jewelry, and elegant evening clutch",
+          "FEMALE_TESETTUR": "luxurious floor-length champagne-rose and emerald modest silk evening gown with structured long sleeves and a coordinated pure silk shawl gracefully draped with complete hair and neck coverage (zero exposed hair), paired with a pearl evening clutch",
+          "MALE": "bespoke midnight-navy peak-lapel evening suit, crisp white tailored dress shirt, silk pocket square, and polished leather Oxford dress shoes"
+        }
+      },
+      {
+        "id": "modena_office_plaza",
+        "cluster": "BUSINESS_TRAVEL",
+        "titleTr": "İş Toplantısı, Sunum & Plaza Hayatı 💼",
+        "copyFocusTr": "Önemli bir iş toplantısı, müşteri sunumu, mülakat veya yoğun plaza temposunda hem otoriter ve profesyonel hem de modern görünen iş kombini oluşturma. Ev içi gardırop yerine doğrudan iş dünyası, plaza prestiji ve toplantı özgüvenine odaklan.",
+        "matchKeywordsTr": ["iş toplantısı", "is toplantisi", "plaza", "ofis", "sunum", "mülakat", "mulakat", "kurumsal", "toplantı", "business", "kariyer stili"],
+        "environmentEn": "Modern high-rise glass corporate plaza lobby and sleek financial district architectural walkway with reflective marble floors and contemporary steel-and-glass towers",
+        "cameraAndMovementEn": "Crisp low-angle gimbal tracking shot walking backward ahead of the subject striding purposefully through the glass plaza entrance, 35mm prime lens at f/1.8",
+        "lightingEn": "Clean architectural daylight streaming through floor-to-ceiling plaza glass panels with balanced warm interior reflections",
+        "actionChoreographyEn": "Striding purposefully through the modern corporate plaza walkway carrying a sleek leather portfolio or tablet, glancing briefly at wristwatch before looking ahead with calm executive confidence",
+        "wardrobeBySlotEn": {
+          "FEMALE_STANDARD": "sharp tailored ivory double-breasted blazer over a fine espresso silk blouse, high-waisted wide-leg wool trousers, and structured leather tote",
+          "FEMALE_TESETTUR": "sophisticated executive modest longline taupe wool blazer layered over a high-neck cream silk blouse and wide-leg tailored trousers, paired with an immaculate monochrome matte crepe hijab fully covering hair and neck",
+          "MALE": "modern unstructured charcoal wool blazer over a fine-gauge navy merino knit polo, tailored pleated trousers, and sleek leather briefcase"
+        }
+      },
+      {
+        "id": "modena_daily_street_cafe",
+        "cluster": "ACTIVE_OUTDOOR",
+        "titleTr": "Günlük Şehir, Kahve & Hafta Sonu Gezisi ☕",
+        "copyFocusTr": "Hafta sonu şehir yürüyüşü, arkadaşlarla üçüncü nesil kahve buluşması, sergi veya alışveriş günü için abartısız ama dikkat çekici günlük (casual / smart-casual) kombin önerisi.",
+        "matchKeywordsTr": ["günlük", "gunluk", "kahve", "hafta sonu", "haftasonu", "sokak stili", "sergi", "gezinti", "buluşma", "casual"],
+        "environmentEn": "Charming sunlit tree-lined urban boulevard outside an artisan specialty coffee shop with warm wooden sidewalk seating and lively European-Istanbul street ambiance",
+        "cameraAndMovementEn": "Naturalistic handheld-stabilized gimbal shot following the subject stepping out of the café terrace onto the sunlit cobblestone sidewalk, 35mm f/2.0",
+        "lightingEn": "Warm dappled afternoon sunlight passing through plane-tree leaves with soft natural contrast",
+        "actionChoreographyEn": "Stepping out of an outdoor café holding a takeaway ceramic/paper coffee cup, walking casually along the tree-lined street with relaxed body language and natural movement",
+        "wardrobeBySlotEn": {
+          "FEMALE_STANDARD": "effortless relaxed beige linen-cotton overshirt over a crisp white rib tank, tailored relaxed denim or ecru trousers, and minimalist leather sneakers",
+          "FEMALE_TESETTUR": "effortless soft sandy-taupe Medina silk hijab with full hair and neck coverage, paired with a relaxed olive-beige longline cotton trench-shirt, wide-leg ecru trousers, and clean minimalist sneakers",
+          "MALE": "relaxed terracotta or sage textured overshirt over a heavyweight organic white tee, smart relaxed chinos, and clean suede sneakers"
+        }
+      },
+      {
+        "id": "modena_birthday_night_event",
+        "cluster": "CELEBRATION_NIGHT",
+        "titleTr": "Doğum Günü, Akşam Yemeği & Konser Gecesi 🎂🌙",
+        "copyFocusTr": "Doğum günü kutlaması, şık bir akşam yemeği randevusu veya açık hava konseri için gecenin enerjisine ve mekana tam uyan kombin tasarlama. Evde dolap karıştırmak yerine gecenin keyfine odaklan.",
+        "matchKeywordsTr": ["doğum günü", "dogum gunu", "akşam yemeği", "aksam yemegi", "kutlama", "restoran", "konser", "parti", "akşam buluşması", "randevu"],
+        "environmentEn": "Stylish contemporary rooftop restaurant and open-air lounge at night with warm amber pendant lamps, candlelit tables, and glowing city skyline bokeh",
+        "cameraAndMovementEn": "Smooth cinematic dolly-in and lateral tracking shot as the subject enters the warm candlelit rooftop lounge, 50mm anamorphic-style f/1.8 shallow depth of field",
+        "lightingEn": "Rich amber candlelight and soft magenta-warm architectural accent lighting against a deep night skyline",
+        "actionChoreographyEn": "Walking into the atmospheric evening venue with lively celebratory energy, smiling warmly toward friends off-camera while the outfit catches the warm evening lights",
+        "wardrobeBySlotEn": {
+          "FEMALE_STANDARD": "chic structured midnight-plum or black satin midi dress with subtle contemporary cut, statement earrings, and sleek heeled boots",
+          "FEMALE_TESETTUR": "refined modern modest evening ensemble with a draped plum-berry silk tunic blazer, flowing pleated satin maxi skirt, and coordinated pure silk scarf neatly covering all hair and neck",
+          "MALE": "sharp smart-evening black merino turtleneck under a textured dark burgundy or charcoal tailored jacket with sleek dark trousers"
+        }
+      },
+      {
+        "id": "modena_travel_weather",
+        "cluster": "BUSINESS_TRAVEL",
+        "titleTr": "Değişken Hava Durumu, Mevsim Geçişi & Seyahat 🌦️✈️",
+        "copyFocusTr": "Sabah serin, öğlen güneşli veya ani yağmurlu şehir havalarında ve hafta sonu seyahatlerinde Modena'nın anlık konum ve hava durumu verisiyle katmanlı, hazırlıklı kombin oluşturması.",
+        "matchKeywordsTr": ["hava durumu", "yağmur", "yagmur", "rüzgar", "mevsim geçişi", "seyahat", "tatil", "valiz", "bavul", "sonbahar", "ilkbahar"],
+        "environmentEn": "Glistening rain-kissed modern avenue and architectural transit terminal plaza with dramatic parting clouds, subtle breeze, and golden sunlight breaking through",
+        "cameraAndMovementEn": "Cinematic 35mm gimbal tracking shot moving alongside the subject walking briskly down the rain-reflected avenue in a gentle breeze",
+        "lightingEn": "Dramatic post-rain golden sunlight reflecting off wet pavement with rich atmospheric depth",
+        "actionChoreographyEn": "Walking briskly along the glistening city avenue with coat lapels moving gently in the breeze, pulling a sleek carry-on Weekender bag or holding a compact umbrella confidently",
+        "wardrobeBySlotEn": {
+          "FEMALE_STANDARD": "iconic water-repellent sand-beige gabardine trench coat layered over a fine knit sweater, tailored ankle boots, and crossbody leather bag",
+          "FEMALE_TESETTUR": "classic belted stone-beige modest long trench coat layered over a warm knit tunic and wide wool trousers, paired with a weather-friendly matte twill hijab neatly covering all hair and neck",
+          "MALE": "structured olive-charcoal technical mac trench coat layered over a textured crewneck knit, dark trousers, and weatherproof Chelsea boots"
+        }
+      },
+      {
+        "id": "modena_virtual_tryon_dna",
+        "cluster": "SMART_EXPERIENCE",
+        "titleTr": "Görsel Prova (Kendi Üzerinde Gör) & Stil DNA ✨",
+        "copyFocusTr": "Bir kombini henüz giymeden veya satın almadan önce Modena'nın 'Kombini Görselleştir' (Görsel Prova) özelliğiyle kendi üzerinde nasıl durduğunu görme, beğenmediğin tek detayı değiştirip kişisel Stil DNA'na tam uydurma.",
+        "matchKeywordsTr": ["görsel prova", "gorsel prova", "üzerinde gör", "stil dna", "renk analizi", "sanal deneme", "virtual try-on"],
+        "environmentEn": "Sunlit contemporary design studio loft with a tall minimalist full-length brass mirror, warm oak floors, indoor olive tree, and soft architectural shadows",
+        "cameraAndMovementEn": "Smooth gimbal arc shot from over-the-shoulder glancing at a sleek smartphone (screen angled away with no readable text) to a crisp reflection and portrait by the full-length mirror, 35mm f/1.8",
+        "lightingEn": "Soft diffused natural window key light with subtle violet-warm rim separation",
+        "actionChoreographyEn": "Glancing briefly at smartphone in hand with an impressed nod, then stepping before the full-length loft mirror and turning slightly to admire the cohesive silhouette and color harmony",
+        "wardrobeBySlotEn": {
+          "FEMALE_STANDARD": "color-harmonized cobalt-blue silk shirt tucked into tailored cream trousers with minimalist gold accents",
+          "FEMALE_TESETTUR": "color-harmonized dusty-lavender pure silk shawl with full hair and neck coverage, paired with a tailored ivory modest tunic blazer and flowing taupe trousers",
+          "MALE": "color-harmonized forest-green fine knit overshirt layered over an ecru tee and tailored charcoal trousers"
+        }
+      },
+      {
+        "id": "modena_smart_closet",
+        "cluster": "SMART_EXPERIENCE",
+        "titleTr": "Dijital Gardırop & Unutulan Parçaları Eşleştirme 👗",
+        "copyFocusTr": "Mevcut kıyafetleri tek tek deneme zahmetine girmeden, uzun süredir giyilmeyen parçaları yeni kombinlerle değerlendirme ve kapsül uyum yakalama.",
+        "matchKeywordsTr": ["gardırop", "gardirop", "dolap", "kapsül", "kapsul", "eski parçalar"],
+        "environmentEn": "Bright minimalist architectural dressing lounge with curated open oak garment rack, warm neutral plaster walls, and morning sunlight",
+        "cameraAndMovementEn": "Fluid 3-axis gimbal push-in as the subject picks up a tailored jacket, slips it on effortlessly, and walks toward the sunlit doorway, 35mm f/1.8",
+        "lightingEn": "Warm natural morning sunlight streaming across textured fabrics",
+        "actionChoreographyEn": "Selecting a tailored outer layer smoothly, slipping it over the shoulder in one fluid motion, and heading confidently toward the sunlit exit ready for the day",
+        "wardrobeBySlotEn": {
+          "FEMALE_STANDARD": "structured camel wool blazer slipped smoothly over a crisp white poplin shirt and tailored dark denim",
+          "FEMALE_TESETTUR": "structured camel modest longline wool coat slipped smoothly over an ivory high-neck tunic and wide-leg trousers, paired with a neat cream silk hijab covering all hair and neck",
+          "MALE": "tailored tobacco-brown suede overshirt jacket slipped smoothly over a crisp white crewneck and dark chinos"
+        }
+      }
+    ]
+  }
+}
