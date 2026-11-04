@@ -134,7 +134,7 @@ export class LearningEngine {
 
     // Henüz yayınlanmış gerçek gönderi yoksa sahte rakam uydurmadan dürüst cold-start profili kaydet
     if (data.publishedDeliveries.length === 0) {
-      const coldWisdom = this.createColdStartWisdom(brandSlug, data.brandName);
+      const coldWisdom = this.createColdStartWisdom(brandSlug, data.brandName || brandSlug.toUpperCase());
       this.persistWisdom(brandSlug, coldWisdom);
       console.log(
         `[Toprak LearningEngine] ℹ️ "${data.brandName}" için henüz yayınlanmış gönderi yok (Cold-Start rehberi aktif).`
@@ -280,7 +280,7 @@ Lütfen aşağıdaki JSON yapısında yanıt ver:
       if (parsed.councilDirectives) {
         updatedWisdom = {
           brandSlug,
-          brandName: data.brandName,
+          brandName: data.brandName || brandSlug.toUpperCase(),
           lastAnalyzedAt: new Date().toISOString(),
           totalPostsAnalyzed: scored.length,
           overallEngagementRate: Number(avgEngagement.toFixed(2)),
@@ -303,7 +303,7 @@ Lütfen aşağıdaki JSON yapısında yanıt ver:
     if (!updatedWisdom) {
       updatedWisdom = {
         brandSlug,
-        brandName: data.brandName,
+        brandName: data.brandName || brandSlug.toUpperCase(),
         lastAnalyzedAt: new Date().toISOString(),
         totalPostsAnalyzed: scored.length,
         overallEngagementRate: Number(avgEngagement.toFixed(2)),
@@ -351,11 +351,11 @@ Lütfen aşağıdaki JSON yapısında yanıt ver:
       };
     }
 
-    this.persistWisdom(brandSlug, updatedWisdom);
+    this.persistWisdom(brandSlug, updatedWisdom!);
     console.log(
       `[Toprak LearningEngine] 💡 Öğrenme Tamamlandı (${scored.length} gerçek gönderi analiz edildi): ${brandSlug}`
     );
-    return updatedWisdom;
+    return updatedWisdom!;
   }
 
   private static scoreRealDeliveries(data: ToprakBridgeAnalyticsData): ScoredPostItem[] {
@@ -386,9 +386,9 @@ Lütfen aşağıdaki JSON yapısında yanıt ver:
     }
 
     return data.publishedDeliveries
-      .filter((d) => TOPRAK_PLATFORMS.includes(d.platform as ToprakPlatform))
-      .map((d) => {
-        const exactSnap = data.snapshots.find((s) => s.postDeliveryId === d.id);
+      .filter((d: any) => TOPRAK_PLATFORMS.includes(d.platform as ToprakPlatform))
+      .map((d: any) => {
+        const exactSnap = data.snapshots.find((s: any) => s.postDeliveryId === d.id);
         const fallbackPlatformAvg = platformSnapMap.get(d.platform);
 
         let impressions = 0;

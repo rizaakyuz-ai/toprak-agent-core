@@ -9,7 +9,7 @@ import {
   type ToprakBridgeInjectInput,
   type ToprakBridgeInjectResult,
   type ToprakBridgeMediaInput,
-} from "../../src/server/toprak-bridge/service";
+} from "./bridge-service";
 
 export type {
   ToprakBridgeAnalyticsData,
@@ -21,11 +21,8 @@ export type {
 };
 
 /**
- * Toprak <-> Lappsoft Social Hub Köprüsü.
- *
- * Öncelikle çalışan Lappsoft Social Hub sunucusuna (:3000/api/internal/toprak) HTTP üzerinden bağlanır.
- * Böylece PGlite veritabanı her iki süreç tarafından aynı anda açılıp bozulmaz ve Social kuyruğunda anında görünür.
- * Eğer Social Hub (:3000) o an kapalıysa (bağlantı reddedilirse), otomatik olarak doğrudan veritabanı servisine düşer.
+ * Toprak <-> Lappsoft Social Hub Bridge.
+ * Connects to the host platform via HTTP and falls back gracefully to local standalone operations.
  */
 export class SocialBridge {
   private static isNetworkOfflineError(err: unknown): boolean {
@@ -83,7 +80,7 @@ export class SocialBridge {
         headers: {
           "x-toprak-bridge-key": config.bridgeSecret,
         },
-        signal: AbortSignal.timeout(4500),
+        signal: AbortSignal.timeout(3500),
       });
 
       const data = (await res.json().catch(() => ({}))) as {
@@ -105,34 +102,28 @@ export class SocialBridge {
     }
   }
 
-  static async injectPendingApproval(
-    input: ToprakBridgeInjectInput
-  ): Promise<ToprakBridgeInjectResult> {
+  static async injectPendingApproval(input: ToprakBridgeInjectInput): Promise<ToprakBridgeInjectResult> {
     const config = loadToprakConfig();
-    const url = `${config.socialBaseUrl.replace(/\/$/, "")}/api/internal/toprak`;
+    const url = `${config.socialBaseUrl.replace(/\/$/, "")}/api/internal/toprak?action=inject`;
 
     try {
       const res = await fetch(url, {
         method: "POST",
         headers: {
-          "Content-Type": "application/json",
+          "content-type": "application/json",
           "x-toprak-bridge-key": config.bridgeSecret,
         },
         body: JSON.stringify(input),
-        signal: AbortSignal.timeout(15000),
+        signal: AbortSignal.timeout(20000),
       });
 
-      const data = (await res.json().catch(() => ({}))) as {
-        ok?: boolean;
-        result?: ToprakBridgeInjectResult;
-        error?: string;
-      };
+      const data = (await res.json().catch(() => ({}))) as ToprakBridgeInjectResult;
 
-      if (!res.ok || !data.ok || !data.result) {
+      if (!res.ok || !data.ok) {
         throw new Error(data.error || `Social HTTP ${res.status}`);
       }
 
-      return data.result;
+      return data;
     } catch (err) {
       if (this.isNetworkOfflineError(err)) {
         return await receiveToprakPackageAsPendingApproval(input);

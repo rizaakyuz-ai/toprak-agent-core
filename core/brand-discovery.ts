@@ -35,8 +35,8 @@ export class BrandDiscovery {
 
     return rawBrands.map((ws) => {
       const parsedAccounts: QualifiedBrandAccount[] = ws.accounts
-        .filter((a) => TOPRAK_PLATFORMS.includes(a.platform as ToprakPlatform))
-        .map((a) => ({
+        .filter((a: any) => TOPRAK_PLATFORMS.includes(a.platform as ToprakPlatform))
+        .map((a: any) => ({
           platform: a.platform as ToprakPlatform,
           connectionMode: a.connectionMode,
           healthStatus: a.healthStatus,
@@ -47,8 +47,8 @@ export class BrandDiscovery {
       const healthyPlatforms = Array.from(
         new Set(
           parsedAccounts
-            .filter((a) => a.healthStatus === "HEALTHY")
-            .map((a) => a.platform)
+            .filter((a: any) => a.healthStatus === "HEALTHY")
+            .map((a: any) => a.platform)
         )
       );
 

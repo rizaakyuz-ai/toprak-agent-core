@@ -10,7 +10,7 @@ import {
   TOPRAK_PLATFORMS,
 } from "../../core/types";
 import type { FullProductionPackage } from "../../agents/copywriter-agent";
-import type { DeliveryMode, PlatformId } from "../../../src/types";
+import type { DeliveryMode, PlatformId } from "../../core/bridge-service";
 
 export interface SocialInjectorOptions {
   /**
@@ -159,7 +159,7 @@ export class SocialInjector {
       sourceRef: bridgeRes.sourceRef,
       approvalStatus: "PENDING_APPROVAL",
       mediaAssetIds: bridgeRes.mediaAssetIds,
-      deliveries: bridgeRes.deliveries.map((d) => ({
+      deliveries: bridgeRes.deliveries.map((d: any) => ({
         deliveryId: d.deliveryId,
         platform: d.platform as ToprakPlatform,
         status: "DRAFT",

@@ -9,10 +9,9 @@
     "esModuleInterop": true,
     "resolveJsonModule": true,
     "noEmit": true,
-    "baseUrl": "..",
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"],
-      "@toprak/*": ["toprak/*"]
+      "@/*": ["./*"]
     }
   },
   "include": ["**/*.ts", "**/*.json"],
